@@ -1,6 +1,7 @@
 from Tkinter import *
 from tkMessageBox import *
 import phone1
+import numpy
 import sqlite3
 con=sqlite3.Connection("phonebook_db")
 cur=con.cursor()
@@ -210,13 +211,15 @@ def edit_search():
         e2.insert(0,al[0][1])
         e3.insert(0,al[0][2])
         e4.insert(0,al[0][3])
-        e5.insert(0,al[0][4])
         e6.insert(0,al[0][5])
+        e5.insert(0,al[0][4])
+        
         e7.insert(0,al[0][6])
         e8.insert(0,al[0][7])
         e9.insert(0,al[0][8])
-        e11.insert(0,al[0][10])
         e13.insert(0,al[0][12])
+        e11.insert(0,al[0][10])
+        
     def edit_sname(e=1):
         es=str('%'+e_s.get()+'%')
         lb.delete(0,END)
