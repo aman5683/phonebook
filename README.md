@@ -1,2 +1,2 @@
 # phonebook
-mobile phonebook using python and database(sqlite3)
+mobile phonebook using python and ds
